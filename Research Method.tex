@@ -1,0 +1,236 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+%Template version as of 6/27/2024
+
+\usepackage{cite}
+\usepackage{multirow}
+\usepackage{array} 
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{The Impact of Academic, Work, and Financial Stress on Depression Among University Students*\\}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Ibrahim Jelii Wale}
+\IEEEauthorblockA{\textit{University of Lincoln} \\
+\textit{Lincolnshire}\\
+United kingdom \\
+brymorla@gmail.com}
+}
+
+\maketitle
+
+\begin{abstract}
+This report discusses the key contribution of academic, work, and financial stress in the incidence of depression among the university student body. Current literature review shows a strong relationship between these stressors and the onset of depressive symptoms. The report also discusses how the existence of mental health issues in the family may enhance the risk of a student developing depression via stress, and considers the efficacy of a range of mental health interventions and support systems for students. Logistic regression and comparative analysis (T-test) were used to test a sample of $N = 27,900$. There were significant relationships between depression and academic pressure ($\mathrm{OR} = 2.30$, $p < 0.001$) and financial stress ($\mathrm{OR} = 1.78$, $p < 0.001$), but not work pressure ($p = 0.203$). A family history modestly enhanced these effects. Findings highlight the importance of targeted mental health interventions aimed at academic and financial stressors, particularly among vulnerable students.
+\end{abstract}
+
+\begin{IEEEkeywords}
+depression, academic stress, financial stress, moderation analysis, mental health
+\end{IEEEkeywords}
+
+\section{Introduction}
+The mental health of university students has become an increasingly significant concern globally, as indicated by an apparently rising prevalence of mental illness, mainly depression \cite{b1}. This increasing trend over the past decade indicates a pressing necessity for universities to understand what is driving this decline and to embark on effective interventions to care for their students \cite{b2}. University student depression goes beyond individual concerns and involves broad implications, with adverse effects on academic achievement, student retention rates, and overall well-being \cite{b3}. Thus, the strength of identifying and addressing the various stressors accountable for depression among university students is an imperative action toward fostering a healthy learning environment.  \\ 
+
+University students encounter an additional set of pressures, and academic, job, and economic pressures emerge as the strongest determinants of their mental well-being \cite{b4}. University life itself, which is characterized by intense academic pressures, independence from family, managing money, and career pressures, can also enhance these stressors\cite{b5}.
+For most students, university life involves the experience of negotiating new social networks, adjusting to a more rigorous academic timetable, learning to manage their own finances for the first time, and dealing with uncertainty regarding their occupational futures \cite{b6}.  This combination of stresses can provide fertile soil for the cultivation of mental health problems. The purpose of this report is to provide a general assessment of the influence of academic, work-related, and financial stressors on depressive symptoms in university students. It will also investigate the moderating role of family mental illness history, compare the effectiveness of interventions currently in place, compare the prevalence of depression in university students worldwide, and lastly discuss the implications these results have on university policy and student service provisions. 
+
+\subsection{Research Hypotheses}
+\textbf{H\textsubscript{1}}: Work pressure, academic pressure, and financial pressure are positively associated with depression.\\
+
+\textbf{H\textsubscript{2}}: These associations are stronger among students with a family history of mental illness.
+
+\section{Methods}
+
+\subsection{Data Collection}
+This study utilized a secondary analysis of anonymized survey data concerning university students. The dataset, which is publicly archived and compliant with the General Data Protection Regulation (GDPR), was sourced from the Kaggle platform. Prior to analysis, data cleaning and preparation were conducted using Microsoft Excel 2019. Additional metadata and documentation about the dataset are available in an associated GitHub repository.
+
+\subsection{Variables}
+\textbf{Outcome:} Depression (binary: self-reported diagnosis or clinical threshold).\\
+\textbf{Predictors:} Academic pressure, work pressure, financial stress.\\
+\textbf{Mean difference of family history:} Family history of mental illness (binary).
+
+\subsection{Statistical Analysis}
+\textbf{Logistic Regression:} This method was used to assess the relationship between the identified stressors and depression, addressing Hypothesis \textbf{H\textsubscript{1}}.\\
+\textbf{Subgroup Analysis:} T-tests were conducted to compare the mean differences in stressor effects between students with and without a family history of mental illness, in line with Hypothesis \textbf{H\textsubscript{2}}.\\
+\textbf{Software:} All statistical analyses were performed using IBM SPSS Statistics, version 26.0, with the significance level set at $p < 0.05$.
+
+\section{Results}
+
+\subsection{Primary Analysis (H\textsubscript{1})}
+The logistic regression model revealed the following associations between the independent stressors and the likelihood of depression: \\
+Table I and Table II revealed by the logistic regression show the distribution of deression and the classifcation of depression predition with the overal prediction accuracy.
+
+\begin{itemize}
+    \item \textbf{Academic Pressure:} Table III revealed that academic pressure was the most significant predictor of depression, with an odds ratio of $OR = 2.30$, 95\% CI [2.25, 2.36], $p < 0.001$.
+    \item \textbf{Financial Stress:} After academic pressue, financial stress happens to be the next significant predictor, with $OR = 1.78$, 95\% CI [1.74, 1.82], $p < 0.001$.
+    \item \textbf{Work Pressure:} Tablle III also revealed that work pressure variable was not a statistically significant predictor of depression, $OR = 1.43$, $p = 0.203$.
+\end{itemize}
+
+The logistic model demonstrated good predictive performance, correctly classifying 76\% of cases, with a specificity of 82.3\% and a sensitivity of 67.2\%.
+
+
+\begin{table}[htbp]
+\caption{Depression Frequency Distribution}
+\centering
+\begin{tabular}{|p{1.5cm}|r|r|r|r|}
+\hline
+\textbf{Depression} & \textbf{Freq.} & \textbf{Percent\%} & \textbf{Valid \%} & \textbf{Cumul. \%} \\
+\hline
+Yes & 11,565 & 41.5 & 41.5 & 41.5 \\
+No  & 16,335 & 58.5 & 58.5 & 100.0 \\
+\hline
+\textbf{Total} & 27,900 & 100.0 & 100.0 & -- \\
+\hline
+\end{tabular}
+\label{tab:depression-frequency}
+\end{table}
+
+
+\begin{table}[htbp]
+\caption{Classification Table for Depression Prediction}
+\centering
+\begin{tabular}{|p{2cm}|p{1.1cm}|p{1.1cm}|p{1.4cm}|}
+\hline
+\textbf{Observed} & \textbf{Predicted Yes} & \textbf{Predicted No} & \textbf{\% Correct} \\
+\hline
+Depression Yes & 7,776 & 3,787 & 67.2\% \\
+Depression No  & 2,897 & 13,437 & 82.3\% \\
+\hline
+\multicolumn{3}{|l|}{\textbf{Overall Accuracy}} & \textbf{76.0\%} \\
+\hline
+\end{tabular}
+\label{tab:classification}
+\end{table}
+
+
+\begin{table*}[htbp]
+\caption{Logistic Regression Results: Variables in the Equation}
+\centering
+\begin{tabular}{|l|r|r|r|r|r|r|r|r|}
+\hline
+\textbf{Variable} & \textbf{B} & \textbf{S.E.} & \textbf{Wald} & \textbf{df} & \textbf{Sig.} & \textbf{Exp(B)} & \textbf{95\% CI Lower} & \textbf{Upper} \\
+\hline
+Academic Pressure & 0.835 & 0.012 & 4769.017 & 1 & 0.000 & 2.304 & 2.250 & 2.359 \\
+Financial Stress  & 0.574 & 0.011 & 2805.313 & 1 & 0.000 & 1.775 & 1.738 & 1.814 \\
+Work Pressure     & 0.357 & 0.280 & 1.623    & 1 & 0.203 & 1.428 & 0.825 & 2.472 \\
+Constant          & -3.940 & 0.055 & 5181.430 & 1 & 0.000 & 0.019 & --    & --    \\
+\hline
+\end{tabular}
+\label{tab:variables-in-equation}
+\end{table*}
+
+\vspace{1mm}
+\noindent\textit{Note:} B = unstandardized coefficient; S.E. = standard error; Wald = Wald chi-square test statistic; df = degrees of freedom; Sig. = significance level; Exp(B) = odds ratio; CI = confidence interval.
+
+
+\subsection{T-test by Family History (H\textsubscript{2})}
+Independent samples t-tests were conducted to compare levels of academic pressure, financial stress, and work pressure between depressed and non-depressed students, stratified by family history of mental illness.
+The findings showed there was a statistically significant academic pressure difference among the groups. Academic stress was higher among students with a family history of mental illness (M = 3.18, SE = 0.0118) than among those without (M = 3.10, SE = 0.0116); t(27,898) = -5.02, $p <.001$. A significant and believable effect was indicated by the mean difference's 95\% confidence interval, which ranged from -0.1155 to -0.0507. This finding demonstrates that students who have a family history of mental illness have extremely high levels of stress related to their studies as shown in table IV and V . \\
+Work Stress shows no significant difference in the two groups' levels of work-related stress. There was no significant difference between individuals who had a family history (M = 0.0001, SE = 0.00015) and those who did not (M = 0.0007, SE = 0.00049) (t(27,898) = 1.04, p =.300). The 95\% confidence interval [-0.0005, 0.0016] contained zero, and hence it was confirmed that the familial history does not influence perceived work-related pressure. \\
+Table V shows that financial stress was reported to be slightly greater in individuals with family history of mental illness (M = 3.15, SE = 0.0124) compared to those without family history (M = 3.13, SE = 0.0119), and this was not statistically significant, t(27,895) = -1.43, p = .153. \\
+The 95\% confidence interval of [-0.0584, 0.0091] included zero and hence established the lack of significant effect of family history on economic burden. In conclusion, the findings of the present study illustrate that academic stress is significantly influenced by a family history of mental disorders. Individuals with such a history appear to be more vulnerable to academic stress, a finding that is consistent with theoretical models linking family risk factors to greater cognitive and emotional reactivity to adverse situations (Hankin, 2006; Kessler et al., 2005). On the contrary, it seems that stressors associated with work and financial matters function independently from an individual's familial background concerning mental health issues.
+
+The results revealed significant differences in academic pressure and financial stress between the groups ($p < 0.001$). Depressed students consistently reported lower mean scores for both academic and financial stress across groups, indicating stronger perceived stress. The mean differences were approximately $\Delta M \approx -1.3$ for academic pressure and $\Delta M \approx -1.1$ for financial stress.
+
+However, work pressure did not show a significant difference between the groups ($p > 0.2$). Additionally, the magnitude of the effect did not differ significantly based on the presence or absence of a family history of mental illness, suggesting a minimal moderating effect.
+
+These results support the interpretation that academic and financial stress are robust correlates of depression in university students, while the influence of family history appears marginal.
+
+
+
+\begin{table*}[htbp]
+\caption{Comparison of Stress Factors by Depression Status (Mental Illness History = No)}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|}
+\hline
+\textbf{Factor} & \textbf{Depression} & \textbf{N} & \textbf{Mean} & \textbf{Std. Dev.} & \textbf{Std. Error} & \textbf{Sig. (2-tailed)} & \textbf{95\% CI (Lower, Upper)} \\
+\hline
+\multirow{2}{*}{Academic Pressure} & Yes & 6335 & 2.3640 & 1.25515 & 0.01577 & \multirow{2}{*}{0.000} & -1.35637, -1.27582 \\
+                                   & No  & 8062 & 3.6801 & 1.19856 & 0.01335 &                          &                      \\
+\hline
+\multirow{2}{*}{Work Pressure}     & Yes & 6335 & 0.0008 & 0.06282 & 0.00079 & \multirow{2}{*}{0.864} & -0.00177, 0.002109 \\
+                                   & No  & 8062 & 0.0006 & 0.05569 & 0.00062 &                         &                     \\
+\hline
+\multirow{2}{*}{Financial Stress}  & Yes & 6335 & 2.5478 & 1.33799 & 0.01681 & \multirow{2}{*}{0.000} & -1.08, -0.9921 \\
+                                   & No  & 8061 & 3.5838 & 1.33351 & 0.01485 &                        &                  \\
+\hline
+\end{tabular}
+\label{tab:depression_factors}
+\end{center}
+\vspace{-1em}
+\begin{flushleft}
+\footnotesize Depression status significantly affected Academic Pressure and Financial Stress ($p < .001$), but not Work Pressure ($p = .864$). Equal variances were assumed across groups.
+\end{flushleft}
+\end{table*}
+
+
+\begin{table*}[htbp]
+\caption{Comparison of Stress Factors by Depression Status (Mental Illness History = Yes)}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|c|c|}
+\hline
+\textbf{Factor} & \textbf{Depression} & \textbf{N} & \textbf{Mean} & \textbf{Std. Dev.} & \textbf{Std. Error} & \textbf{Sig. (2-tailed)} & \textbf{95\% CI (Lower, Upper)} \\
+\hline
+\multirow{2}{*}{Academic Pressure} & Yes & 5230 & 2.3587 & 1.25036 & 0.01729 & \multirow{2}{*}{0.000} & -1.38902, -1.30541 \\
+                                   & No  & 8273 & 3.7059 & 1.17926 & 0.01297 &                        &                     \\
+\hline
+\multirow{2}{*}{Work Pressure}     & Yes & 5230 & 0.0004 & 0.02766 & 0.00038 & \multirow{2}{*}{0.209} & -0.00021, 0.00098 \\
+                                   & No  & 8273 & 0.0000 & 0.00000 & 0.00000 &                        &                    \\
+\hline
+\multirow{2}{*}{Financial Stress}  & Yes & 5228 & 2.4836 & 1.35702 & 0.01877 & \multirow{2}{*}{0.000} & -1.13819, -1.04520 \\
+                                   & No  & 8273 & 3.5752 & 1.33323 & 0.01466 &                        &                   \\
+\hline
+\end{tabular}
+\label{tab:depression_factors_mih_yes}
+\end{center}
+\vspace{-1em}
+\begin{flushleft}
+\footnotesize  Among participants with a history of mental illness, depression was associated with significantly higher Academic Pressure and Financial Stress ($p < .001$), while Work Pressure showed no significant difference ($p = .209$). Overall there is no significant difference between students with/without mental history P-value = 0.992
+\end{flushleft}
+\end{table*}
+
+\section{Discussion}
+\subsection{Key Findings}
+\begin{itemize}
+    \item Academic and financial stress are key predictors of depression, as predicted by Lazarus \& Folkman's (1984) stress-coping theory.
+    \item Family history plays a marginal aggravating role, suggesting genetic/environmental vulnerabilities.
+    \item Null work pressure results might reflect measurement problems (e.g., low variability).
+\end{itemize}
+
+\subsection{Implications}
+\textbf{Policy:} Academic/financial support should be prioritized in universities (e.g., flexible deadlines, emergency grants).\\
+\textbf{Research:} Replicate with longitudinal designs to permit causality inferences.
+
+\subsection{Limitations}
+\begin{itemize}
+    \item Cross-sectional data limits causal inference.
+    \item Self-reported stressors may be prone to bias.
+\end{itemize}
+
+\section{Conclusion}
+This study confirms that academic and financial stress are major correlates of depression among university students. In contrast, work pressure did not exhibit a significant relationship with depression levels. Furthermore, there were no substantial differences in depression outcomes between students with or without a family history of mental illness, leading to the rejection of the null hypothesis \text{H\textsubscript{2}}. 
+
+These findings highlight the importance of implementing targeted mental health interventions aimed specifically at alleviating academic and financial stressors. Such efforts may help mitigate the risk of depression and prevent mental health crises within student populations.
+
+\begin{thebibliography}{00}
+
+\bibitem{b1} N. Liangruenrom, M. Joshanloo, W. Hutaphat, and S. Kittisuksathit, “Prevalence and correlates of depression among Thai university students: nationwide study,” BJPsych Open, vol. 11, no. 2, p. e59, Mar. 2025, doi: 10.1192/bjo.2025.21.
+\bibitem{b2}“New brief on student mental health support in higher education released | International Institute for Higher Education in Latin America and the Caribbean.” Accessed: Apr. 23, 2025. [Online]. Available: https://www.iesalc.unesco.org/en/articles/new-brief-student-mental-health-support-higher-education-released
+\bibitem{b3} R. P. Auerbach et al., “WHO world mental health surveys international college student project: Prevalence and distribution of mental disorders,” J Abnorm Psychol, vol. 127, no. 7, pp. 623–638, Oct. 2018, doi: 10.1037/abn0000362.
+\bibitem{b4} “The Consequences of Academic Pressure on Students’ Mental Health.” Accessed: Apr. 23, 2025. [Online]. Available: https://www.transformationsnetwork.com/post/the-consequences-of-academic-pressure-on-students-mental-health
+\bibitem{b5} “Hidden Cost of Working Through College: Students Struggle to Balance Mental Health – The Red Line Project.” Accessed: Apr. 23, 2025. [Online]. Available: https://redlineproject.news/2024/11/30/hidden-cost-of-working-through-college-students-struggle-to-balance-mental-health/
+\bibitem{b6} “Understanding The Impact Of Financial Stress In College Students | BetterHelp.” Accessed: Apr. 23, 2025. [Online]. Available: https://www.betterhelp.com/advice/stress/understanding-the-impact-of-financial-stress-in-college-students/
+ 
+\end{thebibliography}
+\vspace{12pt} 
+
+\textbf{Ethics Statement}: This study used anonymized data; no ethical approval was required. \\
+\textbf{Conflicts of Interest}: None declared.
+
+\end{document}
