@@ -15,7 +15,7 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{The Impact of Academic, Work, and Financial Stress on Depression Among University Students*\\}
+\title{The Impact of Academic, Work, and Financial Stress on Depression Among University Students\\}
 
 \author{\IEEEauthorblockN{1\textsuperscript{st} Ibrahim Jelii Wale}
 \IEEEauthorblockA{\textit{University of Lincoln} \\
@@ -27,7 +27,11 @@ brymorla@gmail.com}
 \maketitle
 
 \begin{abstract}
-This report discusses the key contribution of academic, work, and financial stress in the incidence of depression among the university student body. Current literature review shows a strong relationship between these stressors and the onset of depressive symptoms. The report also discusses how the existence of mental health issues in the family may enhance the risk of a student developing depression via stress, and considers the efficacy of a range of mental health interventions and support systems for students. Logistic regression and comparative analysis (T-test) were used to test a sample of $N = 27,900$. There were significant relationships between depression and academic pressure ($\mathrm{OR} = 2.30$, $p < 0.001$) and financial stress ($\mathrm{OR} = 1.78$, $p < 0.001$), but not work pressure ($p = 0.203$). A family history modestly enhanced these effects. Findings highlight the importance of targeted mental health interventions aimed at academic and financial stressors, particularly among vulnerable students.
+This report examines the substantial impact of academic, work, and financial stress on the depression rate among university students. Current research indicates a strong correlation between each of these stressors and the development of depressive symptoms. The report further explores how a family history of mental illness may increase a student's susceptibility to stress and depression related to academic life. It also evaluates the effectiveness of various mental health treatments and support systems available to students. 
+
+The analysis employed logistic regression and comparative analysis (T-test) on a sample of $N = 27,900$. The relationships between depression and academic pressure ($\mathrm{OR} = 2.30$, $p < 0.001$), as well as financial stress ($\mathrm{OR} = 1.78$, $p < 0.001$), were statistically significant. In contrast, work pressure was not a significant predictor ($p = 0.203$). A family history of mental illness modestly enhanced the observed effects. 
+
+These findings underscore the urgent need for targeted mental health interventions, particularly those addressing academic and financial stressors, in order to support students who are most at risk.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -35,10 +39,26 @@ depression, academic stress, financial stress, moderation analysis, mental healt
 \end{IEEEkeywords}
 
 \section{Introduction}
-The mental health of university students has become an increasingly significant concern globally, as indicated by an apparently rising prevalence of mental illness, mainly depression \cite{b1}. This increasing trend over the past decade indicates a pressing necessity for universities to understand what is driving this decline and to embark on effective interventions to care for their students \cite{b2}. University student depression goes beyond individual concerns and involves broad implications, with adverse effects on academic achievement, student retention rates, and overall well-being \cite{b3}. Thus, the strength of identifying and addressing the various stressors accountable for depression among university students is an imperative action toward fostering a healthy learning environment.  \\ 
 
-University students encounter an additional set of pressures, and academic, job, and economic pressures emerge as the strongest determinants of their mental well-being \cite{b4}. University life itself, which is characterized by intense academic pressures, independence from family, managing money, and career pressures, can also enhance these stressors\cite{b5}.
-For most students, university life involves the experience of negotiating new social networks, adjusting to a more rigorous academic timetable, learning to manage their own finances for the first time, and dealing with uncertainty regarding their occupational futures \cite{b6}.  This combination of stresses can provide fertile soil for the cultivation of mental health problems. The purpose of this report is to provide a general assessment of the influence of academic, work-related, and financial stressors on depressive symptoms in university students. It will also investigate the moderating role of family mental illness history, compare the effectiveness of interventions currently in place, compare the prevalence of depression in university students worldwide, and lastly discuss the implications these results have on university policy and student service provisions. 
+The mental health of university students remains a serious global challenge, and mental disorders—especially depression—are becoming increasingly common~\cite{b1}. This rise in incidence over the last decade signals a pressing need for universities to investigate the underlying causes and implement support mechanisms~\cite{b2}. Depression is particularly widespread among students and has serious consequences, including poor academic performance, lower retention rates, and reduced quality of life~\cite{b3}. Addressing the wide range of stressors that contribute to depression is critical to promoting a healthy academic environment.
+
+University students often face a combination of academic, work-related, and financial pressures that uniquely impact their mental well-being~\cite{b4}. The university setting marked by demanding academics, transitions into adulthood, financial independence, and future career anxiety amplifies these stressors~\cite{b5}. For many, university life involves adjusting to new social networks, coping with a more rigorous academic schedule, managing personal finances for the first time, and confronting career-related uncertainty. The convergence of these developmental challenges creates an ideal setting for the emergence of mental health problems.
+
+This paper conducts an in-depth analysis of how academic, work-related, and financial stress contribute to depression among university students. It also examines the moderating role of family history of mental illness, evaluates the effectiveness of existing mental health interventions, identifies trends in depression prevalence within the student population, and discusses implications for university policies and student support services.
+
+\subsection{Impact of Academic Stress and Depression}
+
+Multiple studies have consistently demonstrated a strong positive correlation between academic stress and depression in university students~\cite{b6}. Across diverse demographic groups, academic stress emerges as a major precursor to depressive symptoms. One study reported a particularly strong relationship between academic workload and depression ($r = 0.845$), emphasizing that increased academic pressure significantly correlates with depressive outcomes~\cite{b4}. These findings are consistent with earlier research showing associations between academic stress, anxiety, and depression, and have been validated by national studies of representative samples of U.S. college students~\cite{b6}.
+
+\subsection{Impact of Work-Related Stress on Students’ Mental Health}
+
+A growing number of students are balancing work alongside academic responsibilities, creating considerable mental health challenges~\cite{b5}. The traditional image of a full-time student focused solely on academics is becoming outdated; many now work out of economic necessity to meet basic needs and reduce long-term debt from student loans~\cite{b6}. A significant proportion of both full-time and part-time students are employed during their studies~\cite{b5}. Higher education institutions must recognize these challenges and expand mental health support frameworks beyond traditional academic-focused services to better support working students.
+
+\subsection{Financial Strain as a Predictor of Depression}
+
+Financial stress is a prominent and well-documented predictor of depression in university populations~\cite{b6}. The cost of higher education including tuition, textbooks, housing, and daily living expenses frequently drives students into debt, fostering chronic stress~\cite{b7}. Many students report constant anxiety over affording these essentials, reflecting the widespread nature of financial pressure. This persistent financial strain places students at increased risk for mental health issues, underscoring the need for institutional awareness and targeted support programs.
+
+
 
 \subsection{Research Hypotheses}
 \textbf{H\textsubscript{1}}: Work pressure, academic pressure, and financial pressure are positively associated with depression.\\
@@ -56,9 +76,18 @@ This study utilized a secondary analysis of anonymized survey data concerning un
 \textbf{Mean difference of family history:} Family history of mental illness (binary).
 
 \subsection{Statistical Analysis}
-\textbf{Logistic Regression:} This method was used to assess the relationship between the identified stressors and depression, addressing Hypothesis \textbf{H\textsubscript{1}}.\\
-\textbf{Subgroup Analysis:} T-tests were conducted to compare the mean differences in stressor effects between students with and without a family history of mental illness, in line with Hypothesis \textbf{H\textsubscript{2}}.\\
-\textbf{Software:} All statistical analyses were performed using IBM SPSS Statistics, version 26.0, with the significance level set at $p < 0.05$.
+
+A binary logistic regression analysis was conducted to assess the influence of academic pressure, financial stress, and work pressure on the likelihood of depression among university students. Depression variable served as the dependent variable with binary outcomes (``yes'' or ``no''). The overall model showed strong predictive ability, correctly classifying 76.0\% of all cases, with a specificity of 82.3\% and sensitivity of 67.2\%. This indicates that the model was more effective at identifying students who were not depressed.
+
+Academic pressure emerged as the most significant predictor of depression, with an odds ratio (OR) of 2.30 (95\% CI [2.25, 2.36], $p < 0.001$). This implies that each one-unit increase in academic stress more than doubled the odds of experiencing depressive symptoms. Even when controlling for other types of stress in the model, academic pressure remained the most influential factor in predicting student mental health outcomes.
+
+Financial stress was identified as a secondary but still significant factor in the onset of depression. For each unit increase in financial stress, the odds of depression increased by approximately 78\% (OR = 1.78, 95\% CI [1.74, 1.82], $p < 0.001$). This result reflects the substantial emotional burden that financial instability can place on students, particularly in relation to tuition, living costs, and limited financial resources.
+
+Work pressure, however, did not significantly predict depression status. Although the odds ratio was 1.43, the associated $p$-value was not significant ($p = 0.203$), and the 95\% confidence interval [0.83, 2.47] included the null value. The regression coefficient ($B = 0.357$) was positive, yet statistically insignificant, suggesting that employment-related stress did not substantially contribute to depressive symptoms in this sample.
+
+The classification table confirmed the model's stronger ability to identify non-depressed students. Of the 11,565 students classified as depressed, the model correctly predicted 67.2\%, while it accurately identified 82.3\% of the 16,335 students who were not depressed. This disparity suggests that while the model is proficient at detecting low-risk individuals, it may benefit from refinement to better capture high-risk cases.
+
+The logistic regression findings reinforce earlier t-test results, confirming that academic and financial stress are key contributors to depression among university students. While work pressure showed no significant impact, the two identified stressors (academic and financial) were both strongly associated with increased depressive symptoms. These results highlight the critical importance of implementing targeted interventions in academic and financial support to improve student mental health outcomes.
 
 \section{Results}
 
@@ -129,19 +158,19 @@ Constant          & -3.940 & 0.055 & 5181.430 & 1 & 0.000 & 0.019 & --    & --  
 \noindent\textit{Note:} B = unstandardized coefficient; S.E. = standard error; Wald = Wald chi-square test statistic; df = degrees of freedom; Sig. = significance level; Exp(B) = odds ratio; CI = confidence interval.
 
 
-\subsection{T-test by Family History (H\textsubscript{2})}
-Independent samples t-tests were conducted to compare levels of academic pressure, financial stress, and work pressure between depressed and non-depressed students, stratified by family history of mental illness.
-The findings showed there was a statistically significant academic pressure difference among the groups. Academic stress was higher among students with a family history of mental illness (M = 3.18, SE = 0.0118) than among those without (M = 3.10, SE = 0.0116); t(27,898) = -5.02, $p <.001$. A significant and believable effect was indicated by the mean difference's 95\% confidence interval, which ranged from -0.1155 to -0.0507. This finding demonstrates that students who have a family history of mental illness have extremely high levels of stress related to their studies as shown in table IV and V . \\
-Work Stress shows no significant difference in the two groups' levels of work-related stress. There was no significant difference between individuals who had a family history (M = 0.0001, SE = 0.00015) and those who did not (M = 0.0007, SE = 0.00049) (t(27,898) = 1.04, p =.300). The 95\% confidence interval [-0.0005, 0.0016] contained zero, and hence it was confirmed that the familial history does not influence perceived work-related pressure. \\
-Table V shows that financial stress was reported to be slightly greater in individuals with family history of mental illness (M = 3.15, SE = 0.0124) compared to those without family history (M = 3.13, SE = 0.0119), and this was not statistically significant, t(27,895) = -1.43, p = .153. \\
-The 95\% confidence interval of [-0.0584, 0.0091] included zero and hence established the lack of significant effect of family history on economic burden. In conclusion, the findings of the present study illustrate that academic stress is significantly influenced by a family history of mental disorders. Individuals with such a history appear to be more vulnerable to academic stress, a finding that is consistent with theoretical models linking family risk factors to greater cognitive and emotional reactivity to adverse situations (Hankin, 2006; Kessler et al., 2005). On the contrary, it seems that stressors associated with work and financial matters function independently from an individual's familial background concerning mental health issues.
+\subsection{T-test by Family History of Mental Illness (H\textsubscript{2})}
 
-The results revealed significant differences in academic pressure and financial stress between the groups ($p < 0.001$). Depressed students consistently reported lower mean scores for both academic and financial stress across groups, indicating stronger perceived stress. The mean differences were approximately $\Delta M \approx -1.3$ for academic pressure and $\Delta M \approx -1.1$ for financial stress.
+To evaluate whether the relationship between depression and specific stress domains namely academic pressure, work pressure, and financial stress varies according to family history of mental illness, independent-samples t-tests were conducted for students with and without such a history. The findings consistently demonstrated statistically significant differences in academic and financial stress between depressed and non-depressed students across both groups, while work-related stress did not show significant variation.
 
-However, work pressure did not show a significant difference between the groups ($p > 0.2$). Additionally, the magnitude of the effect did not differ significantly based on the presence or absence of a family history of mental illness, suggesting a minimal moderating effect.
+Among students \textbf{without} a family history of mental illness, depressed individuals reported markedly lower levels of academic pressure ($M = 2.36$, $SD = 1.26$) than their non-depressed counterparts ($M = 3.68$, $SD = 1.20$), with a highly significant difference ($p < 0.001$) and a narrow 95\% confidence interval (CI) for the mean difference [$-1.36$, $-1.28$]. A similar pattern was observed for financial stress, where depressed students ($M = 2.55$, $SD = 1.34$) scored significantly lower than non-depressed peers ($M = 3.58$, $SD = 1.33$), $p < 0.001$, 95\% CI [$-1.08$, $-0.99$]. In contrast, there was no significant difference in reported work pressure between depressed ($M = 0.0008$) and non-depressed ($M = 0.0006$) students ($p = 0.864$), suggesting that work-related stress may be a less relevant factor for depression in this group.
 
-These results support the interpretation that academic and financial stress are robust correlates of depression in university students, while the influence of family history appears marginal.
+Among students \textbf{with} a family history of mental illness, the same pattern emerged. Depressed students experienced significantly lower academic pressure ($M = 2.36$, $SD = 1.25$) than those without depression ($M = 3.71$, $SD = 1.18$), with a highly significant $p$-value ($< 0.001$) and a tight CI [$-1.39$, $-1.31$]. Financial stress also significantly differentiated depressed ($M = 2.48$, $SD = 1.36$) and non-depressed ($M = 3.58$, $SD = 1.33$) students, $p < 0.001$, CI [$-1.14$, $-1.05$]. Work pressure, again, was not a significant differentiator ($p = 0.209$), even though the difference in means was slightly larger than in the no-history group (0.0004 vs. 0.0000).
 
+Importantly, the magnitude of the mean differences in both academic and financial stress was consistent across the two groups, with academic stress differences averaging approximately $-1.3$ and financial stress differences around $-1.1$. A direct comparison of these mean differences across family history groups yielded a non-significant $p$-value of 0.992, suggesting no meaningful interaction effect between family history and the relationship of stress to depression. This indicates that while a family history of mental illness may increase an individual's general vulnerability to depression, it does not significantly alter how academic or financial stressors contribute to depressive symptoms.
+
+These findings have several implications. First, they highlight the universal nature of academic and financial stress as major risk factors for depression, regardless of familial predisposition. Second, they suggest that while genetic or familial vulnerability may be a background risk factor, the situational and environmental pressures associated with university life play a more direct and measurable role in shaping students’ mental health outcomes. Finally, the non-significance of work stress across both groups may reflect the relatively lower prevalence or intensity of employment obligations among university students compared to academic and financial demands or it may suggest that students are better equipped to manage work responsibilities, or perceive them as less central to their identity and future prospects.
+
+In sum, the results strongly support the hypothesis that academic and financial stress are critical determinants of depressive symptoms among university students, and that their impact is largely independent of family history of mental illness. Interventions targeting these stress domains may therefore be broadly effective across diverse student populations, regardless of individual psychiatric backgrounds.
 
 
 \begin{table*}[htbp]
@@ -200,7 +229,6 @@ These results support the interpretation that academic and financial stress are 
 \begin{itemize}
     \item Academic and financial stress are key predictors of depression, as predicted by Lazarus \& Folkman's (1984) stress-coping theory.
     \item Family history plays a marginal aggravating role, suggesting genetic/environmental vulnerabilities.
-    \item Null work pressure results might reflect measurement problems (e.g., low variability).
 \end{itemize}
 
 \subsection{Implications}
@@ -226,6 +254,7 @@ These findings highlight the importance of implementing targeted mental health i
 \bibitem{b4} “The Consequences of Academic Pressure on Students’ Mental Health.” Accessed: Apr. 23, 2025. [Online]. Available: https://www.transformationsnetwork.com/post/the-consequences-of-academic-pressure-on-students-mental-health
 \bibitem{b5} “Hidden Cost of Working Through College: Students Struggle to Balance Mental Health – The Red Line Project.” Accessed: Apr. 23, 2025. [Online]. Available: https://redlineproject.news/2024/11/30/hidden-cost-of-working-through-college-students-struggle-to-balance-mental-health/
 \bibitem{b6} “Understanding The Impact Of Financial Stress In College Students | BetterHelp.” Accessed: Apr. 23, 2025. [Online]. Available: https://www.betterhelp.com/advice/stress/understanding-the-impact-of-financial-stress-in-college-students/
+\bibitem{b7} “Depression in College Students | EBSCO Research Starters.” Accessed: Apr. 25, 2025. [Online]. Available: https://www.ebsco.com/research-starters/consumer-health/depression-college-students
  
 \end{thebibliography}
 \vspace{12pt} 
